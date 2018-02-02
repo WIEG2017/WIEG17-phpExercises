@@ -1,9 +1,15 @@
 <?php
 include 'menuItems.php';
+include 'menuItems.php';
 ?>
 <html>
     <head>
-        <title><?php echo $pageName ?></title>
+        <title><?php 
+        echo "My Site";        
+        if (isset($pageName)) {
+            echo " - $pageName";
+        }
+        ?></title>
         <style>
             <?php
             include 'style.css';
@@ -11,7 +17,11 @@ include 'menuItems.php';
         </style>
     </head>
     <body>
-<h1>Cool import site - <?php echo $pageName ?></h1>
+    <?php
+        if (isset($showTitle) && $showTitle == true) {
+            echo "<h1>Cool import site title</h1>";
+        }
+    ?>
 <ul>
     <?php
         foreach($menuItems as $item) {

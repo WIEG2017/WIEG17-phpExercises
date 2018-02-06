@@ -36,6 +36,6 @@
     function listGurkOptions($array) {
 
         foreach($array as $key => $gurka) {
-            echo "<option value='".$gurka['name']."'>".$gurka['name']."</option>";
+            echo "<option value='".$key."'>".$gurka['name']."</option>";
         }
     }

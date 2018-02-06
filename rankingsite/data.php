@@ -7,8 +7,10 @@
     );
 
     $gurkItemArray = array( 
-        createGurka(0, "All annan gurka", "Vet inte riktigt"),
-        createGurka(5, "Zuccuni", "Lite äcklig sådär, helt ok"),
-        createGurka(-1000, "Salt gurka", "fy fan"),
-        createGurka(8, "Vanlig gurka", "Smakar mest vatten, god")
+        0 => createGurka(0, "All annan gurka", "Vet inte riktigt"),
+        1 => createGurka(5, "Zuccuni", "Lite äcklig sådär, helt ok"),
+        2 => createGurka(-1000, "Salt gurka", "fy fan"),
+        3 => createGurka(8, "Vanlig gurka", "Smakar mest vatten, god")
     );
+
+    define("SITE_NAME", "Viktors Gurksite 🥒");

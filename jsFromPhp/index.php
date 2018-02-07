@@ -1,4 +1,3 @@
-
 <?php 
 
 abstract class SimpsonCharacter {
@@ -15,7 +14,8 @@ class HomerSimpsonCharacter extends SimpsonCharacter {
     protected $image = 'homer.png';
 
     public function onClick() {
-        return "alert(\"doh!\");";
+        $text = 'var audio = new Audio("jsFromPhp/tiger.mp3"); audio.play();';
+        return $text;
     }
 }
 class LisaSimpsonCharacter extends SimpsonCharacter {
